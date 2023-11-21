@@ -1,7 +1,7 @@
 {
   "name": "tprs",
   "version": "1.0.0",
-  "description": "Тестовое задание для компании расчетные системы",
+  "description": "Тестовое задание для компании Пластилин-арт",
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
