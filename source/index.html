@@ -574,7 +574,7 @@
 
     <section class="chosen container">
 
-      <ul class="chosen__heading">
+      <ul class="chosen__heading heading">
 
         <li class="heading__item">
           <h4 class="heading__h4">Нас выбирают</h4>
@@ -675,8 +675,62 @@
       </div>
 
     </section>
+
+    <section class="form">
+      <ul class="form__heading heading">
+
+        <li class="heading__item">
+          <h4 class="heading__h4 heading__h4--red">Стать клиентом MIZANTIN</h4>
+        </li>
+
+        <li class="heading__item">
+          <p class="heading__description">Оставьте заявку и наш менеджер проконсультирует Вас и поможет подобрать лучшие
+            окна и двери из натурального дерева для Вашего дома</p>
+        </li>
+      </ul>
+
+      <div class="form__wrapper container">
+
+        <form class="form__modal" action="https://echo.htmlacademy.ru/" name="form-callback" id="form__callback"
+          method="post">
+
+          <ul class="form__list">
+
+            <li class="form__item form__item--flex">
+              <input class="form__input" type="text" placeholder="Ваше имя:" id="form__name" name="form-name">
+              <label class="form__label" for="form__name"></label>
+            </li>
+
+            <li class="form__item form__item--flex">
+              <input class="form__input" type="text" placeholder="Ваш телефон: +7 (000) 000-00-00" id="form__phone"
+                name="form-phone">
+              <label class="form__label" for="form__phone"></label>
+            </li>
+
+            <li class="form__item">
+              <button class="form__submit" type="submit">
+                <span class="form__sign">Заказать звонок</span>
+              </button>
+            </li>
+
+          </ul>
+
+          <div class="form__box form__item--flex">
+            <input class="form__checkbox" type="checkbox" id="form__checkbox" name="policy-checkbox">
+            <label class="form__label form__label--policy" for="form__checkbox">Ознакомлен с <a class="form__policy"
+                href="/" target="_blank">Регламентом о защите персональных
+                данных</a> и
+              выражаю согласие на их обработку</label>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/app.js" type="module"></script>
 </body>
 
