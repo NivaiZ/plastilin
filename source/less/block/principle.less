@@ -1,0 +1,44 @@
+.principle {
+  background-color: @extra-gray;
+
+  .heading__h3 {
+    padding-bottom: 25px;
+    padding-top: 38px;
+    margin-bottom: 28px;
+  }
+}
+
+.principle__strong {
+  font-size: 22px;
+}
+
+.principle__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.principle__description {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.principle__box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.principle__item {
+  &:nth-child(4) {
+    grid-column: 3/1;
+  }
+}
+
+.principle__strong {
+  margin-left: 20px;
+}
+
+.principle__inner {
+  padding-bottom: 50px;
+}
