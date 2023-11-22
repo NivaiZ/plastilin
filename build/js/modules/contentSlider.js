@@ -10,7 +10,7 @@ export function contentSlider () {
       },
       breakpoints: {
         1440: {
-          slidesPerView: 1.3,
+          slidesPerView: 3,
         },
       }
     });
