@@ -1,0 +1,42 @@
+.menu__item--active {
+  background-color: @basic-white;
+  transform: matrix(1, 0, -0.6, 1, 0, 0);
+
+  .menu__link {
+    display: flex;
+    transform: matrix(1, 0, 0.6, 1, 0, 0);
+    color: @basic-black;
+  }
+}
+
+.menu__link {
+  padding: 10px 10px 10px 9px;
+  text-decoration: none;
+  color: @basic-grey;
+  font-size: 18px;
+  line-height: 23.4px;
+
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.menu__list--flex {
+  flex: 1;
+  justify-content: center;
+}
+
+.menu__item {
+  display: block;
+  padding: 0 10px 0 10px;
+}

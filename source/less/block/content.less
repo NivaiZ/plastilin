@@ -1,0 +1,24 @@
+.content__box {
+  margin: 40px 0 20px 0;
+}
+
+.content__block {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.content__inner {
+  position: relative;
+  margin-top: 46px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    border-left: 4px solid @basic-red;
+    top: 0;
+    height: 100%;
+  }
+}
