@@ -3,7 +3,7 @@ export function contentSlider() {
 
   if (swiperElement) {
     const swiper = new Swiper(swiperElement, {
-      slidesPerView: 2,
+      slidesPerView: 1,
       navigation: {
         nextEl: ".content__button.swiper-button-next",
         prevEl: ".content__button.swiper-button-prev",
