@@ -1,0 +1,37 @@
+.burger__button {
+  .button();
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  height: 25px;
+  align-items: center;
+}
+
+.burger__toggle {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  vertical-align: bottom;
+  background-color: @basic-black;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: @basic-black;
+    transition: top 0.5s 0.5s, transform 0.5s;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  &::after {
+    top: -8px;
+  }
+}

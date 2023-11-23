@@ -189,6 +189,37 @@
     </div>
   </header>
 
+  <header class="header__mobile mobile">
+    <nav class="mobile__nav">
+      <ul class="mobile__list">
+
+        <li class="mobile__item">
+          <a class="mobile__logo" href="/" aria-label="Логотип">
+            <svg class="menu__mobile--svg" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#icon__logo"></use>
+            </svg>
+          </a>
+
+        </li>
+
+        <li class="mobile__item contacts">
+          <a class="contacts__link" href="tel:+78125666615" aria-label="Телефон">+7 (812) 566-66-15
+            <svg class="contacts__svg">
+              <use xlink:href="./img/sprite.svg#icon__phone"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile__item burger">
+          <button class="burger__button" type="button" data-button="burger" aria-label="Бургер меню">
+            <span class="burger__toggle"></span>
+          </button>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
   <main class="main">
 
     <section class="general container">
@@ -235,16 +266,17 @@
           </ul>
 
           <ul class="content__block">
-            <li class="content__item">
-              <button class="content__button swiper-button-next" type="button" aria-label="Следующий слайд"></button>
-            </li>
 
             <li class="content__item">
               <button class="content__button swiper-button-prev" type="button" aria-label="Предыдущий слайд"></button>
             </li>
 
+            <li class="content__item">
+              <button class="content__button swiper-button-next" type="button" aria-label="Следующий слайд"></button>
+            </li>
+
           </ul>
-          <div class="swiper-pagination"></div>
+          <div class="content__pagination swiper-pagination"></div>
         </div>
 
         <div class="content__inner values">
@@ -713,7 +745,7 @@
             </li>
 
             <li class="form__item">
-              <button class="form__submit" type="submit" aria-label="Кнопка заказать звонок">
+              <button class="form__submit" type="submit" aria-label="Кнопка заказать звонок" data-da=".form__dynamic, 767, 2">
                 <span class="form__sign">Заказать звонок</span>
               </button>
             </li>
@@ -730,6 +762,7 @@
               выражаю согласие на их обработку</label>
           </div>
 
+          <div class="form__dynamic"></div>
         </form>
       </div>
 

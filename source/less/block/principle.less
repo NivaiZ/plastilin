@@ -10,12 +10,24 @@
 
 .principle__strong {
   font-size: 22px;
+
+  @media (max-width: 1440px) {
+    font-size: 16px;
+  }
 }
 
 .principle__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
+
+  @media (max-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: unset;
+    padding: 0 0 20px 0;
+  }
 }
 
 .principle__description {
@@ -41,4 +53,18 @@
 
 .principle__inner {
   padding-bottom: 50px;
+
+  @media (max-width: 1440px) {
+    padding: 0 16px 0 16px;
+  }
+}
+
+.principle__item {
+  @media (max-width: 1440px) {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }

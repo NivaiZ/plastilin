@@ -11,6 +11,10 @@
     margin-top: 7px;
     font-size: 24px;
   }
+
+  @media (max-width: 1440px) {
+    padding: 0 16px 0 16px;
+  }
 }
 
 .form__heading {
@@ -20,6 +24,10 @@
   max-width: 910px;
   margin: 0 auto;
   padding-top: 56px;
+
+  @media (max-width: 1440px) {
+    padding-top: 16px;
+  }
 }
 
 .form__input {
@@ -43,12 +51,21 @@
 .form__list {
   display: flex;
   align-items: flex-end;
+
+  @media (max-width: 1440px) {
+    display: block;
+  }
 }
 
 .form__item--flex {
   display: flex;
   flex: 1;
   margin-right: 86px;
+
+  @media (max-width: 1440px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -58,6 +75,10 @@
 .form__sign {
   font-size: 20px;
   color: @basic-white;
+
+  @media (max-width: 1440px) {
+    font-size: 16px;
+  }
 }
 
 .form__submit {
@@ -70,6 +91,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1440px) {
+    min-width: 160px;
+  }
 
   &:hover {
     opacity: 0.5;
@@ -84,22 +109,9 @@
 .form__label--policy {
   font-size: 14px;
   line-height: 16px;
-}
-
-
-.form__checkbox {
-  display: none;
-
-  &:checked+.form__label--policy {
-    user-select: none;
-  }
-}
-
-.form__label--policy {
   position: relative;
   cursor: pointer;
   padding-left: 35px;
-  line-height: 24px;
 
   &:before {
     content: "";
@@ -120,10 +132,19 @@
     top: 6px;
     width: 12px;
     height: 6px;
-    border-left: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-left: 2px solid @basic-black;
+    border-bottom: 2px solid @basic-black;
     transform: rotate(-45deg);
     opacity: 0;
+  }
+}
+
+
+.form__checkbox {
+  display: none;
+
+  &:checked+.form__label--policy {
+    user-select: none;
   }
 }
 
@@ -139,8 +160,22 @@
 
 .form__wrapper {
   margin-top: 77px;
+
+  @media (max-width: 1440px) {
+    margin-top: 20px;
+  }
 }
 
 .form__box--flex {
   display: flex;
+}
+
+.form__dynamic {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
