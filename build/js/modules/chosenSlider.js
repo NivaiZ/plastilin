@@ -3,7 +3,7 @@ export function chosenSlider() {
 
   if (swiperElement) {
     const swiper = new Swiper(swiperElement, {
-      spaceBetween: 112,
+      spaceBetween: 100,
       pagination: {
         el: '.swiper-pagination',
         type: 'custom',
